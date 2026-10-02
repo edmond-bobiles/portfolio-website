@@ -2,8 +2,8 @@
     --bg: #ffffff;
     --text: #1a1a1a;
     --muted: #6b6b6b;
-    --accent: /* your color */;
-    --font: /* your font stack */;
+    --accent: #2563EB;
+    --font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     --max-width: 800px;
 }
 
@@ -12,35 +12,49 @@
   margin: 0; 
   padding: 0; 
 }
-#name{
-    font-size: 40px;
+
+body {
+    font-family: var(--font);
+    background: #ffffff;
+    color: #18181b;
+    line-height: 1.6;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+section {
+  padding: 4rem 0;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+h2,
+h3 {
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
