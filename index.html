@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name | Portfolio</title>
+    <title>Edmond Bobiles | Portfolio</title>
 
   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,21 +14,28 @@
 <body>
     <header>
         <nav class="topnav">
-            <a class="active" href="#about">About</a>
+        <a class="brand" href="#home">Edmond Bobiles</a>
+        <div class="nav-links">
+            <a class="active" href="#home">Home</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="#resume">Experience</a>
             <a href="#contact">Contact</a>
+        </div>
         </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h2>Edmond Bobiles</h2>
-
-            <h2>About Me</h2>
-            <p class="tagline">Hi! I am a Computer Science student at the University of Santo Tomas. 
+        <section id="home">
+            <div class="home-text">
+                <h1>Edmond Bobiles</h1>
+                <p>Hi! I am a Computer Science student at the University of Santo Tomas.
                 I like building full-stack web applications and have interests in technology in general.</p>
+                <div class="home-buttons">
+                    <a class="btn btn-primary" href="#projects">View Projects</a>
+                    <a class="btn btn-secondary" href="resume.html">Download Resume</a>
+                </div>
+            </div>
+            <img class="home-photo" src="assets/profile.jpg" alt="Photo of Edmond Bobiles">
         </section>
 
         <section id="projects">
@@ -39,28 +46,43 @@
 
             <div class="project-grid">
                 <div class="project">
-                    <h3>Blog App</h3>
-                    <p>A blog app where you can create an account, make a post and comment as well as 
-                        delete.</p>
-                    <p class="tech-stack">HTML, TailwindCSS, Javascript, Python, FastAPI</p>  
-                    <a href="https://github.com/edmond-bobiles/blog-app" target="_blank">Github</a> 
-                    <a href="https://your-demo-link.com" target="_blank">Live Demo</a>
+                    <img src="assets/blog-app.png" alt="Screenshot of the blog app">
+                    <div class="project-body">
+                        <h3>Blog App</h3>
+                        <p>A blog app where you can create an account, make a post and comment as well as 
+                            delete.</p>
+                        <p class="tech-stack">HTML, TailwindCSS, Javascript, Python, FastAPI</p>
+                        <div class="project-links">
+                            <a href="https://github.com/edmond-bobiles/blog-app" target="_blank">View project</a> 
+                            <a href="https://your-demo-link.com" target="_blank">Live site</a>
+                        </div>  
+                    </div>
                 </div>
                 <div class="project">
-                    <h3>Blog App</h3>
-                    <p>A blog app where you can create an account, make a post and comment as well as 
-                        delete.</p>
-                    <p class="tech-stack">HTML, TailwindCSS, Javascript, Python, FastAPI</p>  
-                    <a href="https://github.com/edmond-bobiles/blog-app" target="_blank">Github</a> 
-                    <a href="https://your-demo-link.com" target="_blank">Live Demo</a>
+                    <img src="assets/blog-app.png" alt="Screenshot of the blog app">
+                    <div class="project-body">
+                        <h3>Blog App</h3>
+                        <p>A blog app where you can create an account, make a post and comment as well as 
+                            delete.</p>
+                        <p class="tech-stack">HTML, TailwindCSS, Javascript, Python, FastAPI</p>
+                        <div class="project-links">
+                            <a href="https://github.com/edmond-bobiles/blog-app" target="_blank">View project</a> 
+                            <a href="https://your-demo-link.com" target="_blank">Live site</a>
+                        </div>  
+                    </div>
                 </div>
                 <div class="project">
-                    <h3>Blog App</h3>
-                    <p>A blog app where you can create an account, make a post and comment as well as 
-                        delete.</p>
-                    <p class="tech-stack">HTML, TailwindCSS, Javascript, Python, FastAPI</p>  
-                    <a href="https://github.com/edmond-bobiles/blog-app" target="_blank">Github</a> 
-                    <a href="https://your-demo-link.com" target="_blank">Live Demo</a>
+                    <img src="assets/blog-app.png" alt="Screenshot of the blog app">
+                    <div class="project-body">
+                        <h3>Blog App</h3>
+                        <p>A blog app where you can create an account, make a post and comment as well as 
+                            delete.</p>
+                        <p class="tech-stack">HTML, TailwindCSS, Javascript, Python, FastAPI</p>
+                        <div class="project-links">
+                            <a href="https://github.com/edmond-bobiles/blog-app" target="_blank">View project</a> 
+                            <a href="https://your-demo-link.com" target="_blank">Live site</a>
+                        </div>  
+                    </div>
                 </div>
             </div>
         </section>
@@ -73,7 +95,7 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Java</li>
-                <li>Javascript</li>
+                <li>JavaScript</li>
                 <li>Python</li>
                 <li>SQL</li>
             </ul>
@@ -94,10 +116,6 @@
                 <li>Adaptability</li>
                 <li>Communication</li>
             </ul>
-        </section>
-
-        <section id="resume">
-            <h2>Resume</h2>
         </section>
 
         <section id="contact">
