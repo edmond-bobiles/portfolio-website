@@ -70,3 +70,40 @@ const detail = document.getElementById("project-detail");
 if (detail) {
     renderProjectDetail(detail);
 }
+
+// Scroll-spy: highlight the nav link for the section on screen
+const sections = document.querySelectorAll("main section[id]");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+function setActiveLink(id) {
+    for (const link of navLinks){
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + id){
+            link.classList.add("active");
+        }
+    }
+    // TODO: loop through navLinks
+    //   - remove the "active" class from each link
+    //   - if link.getAttribute("href") === "#" + id, add "active" to it
+}
+
+if (sections.length > 0) {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            for (const entry of entries){
+                if (entry.isIntersecting === "true"){
+                    setActiveLink(entry.target.id);
+                }
+            }
+            
+            // TODO: loop through entries
+            //   if entry.isIntersecting, call setActiveLink(entry.target.id)
+        },
+        { rootMargin: "-40% 0px -55% 0px" }
+    );
+
+    for (const section of sections){
+        observer.observe(section);
+    }
+    // TODO: loop through sections and call observer.observe(section) on each
+}
