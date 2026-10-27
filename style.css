@@ -210,19 +210,11 @@ ul {
 .project {
     display: flex;
     flex-direction: column;       /* lets the cards stretch to equal height */
-    background: var(--lavender);
+    background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
     overflow: hidden;
     transition: border-color 0.2s, transform 0.2s;
-}
-
-.project:nth-child(3n + 2) {
-    background: var(--mint);
-}
-
-.project:nth-child(3n) {
-    background: var(--peach);
 }
 
 .project:hover {
