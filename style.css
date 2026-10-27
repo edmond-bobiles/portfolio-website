@@ -3,19 +3,22 @@ html {
 }
 
 :root {
-    /* Classic Minimal — Punchier */
+    /* Warm neutrals with a few colorful accents */
     --white: #FFFFFF;
-    --light-gray: #F1F3F5;
-    --gray: #8994A5;
-    --charcoal: #171C2B;
-    --slate-blue: #3457F1;
+    --light-gray: #F2F3F8;
+    --gray: #A2A8B8;
+    --charcoal: #20263A;
+    --slate-blue: #4056C9;
 
-    --bg: var(--white);
+    --bg: #FAF9F6;
     --surface: var(--light-gray);
     --text: var(--charcoal);
-    --muted: #626D80;
-    --border: #E0E4EB;
+    --muted: #596278;
+    --border: #E3E3EA;
     --accent: var(--slate-blue);
+    --lavender: #EDEBFA;
+    --mint: #E2F1EB;
+    --peach: #F9EAE2;
 
     --font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     --max-width: 1200px;
@@ -29,7 +32,7 @@ html {
 
 body {
     font-family: var(--font);
-    background: var(--bg);
+    background: radial-gradient(ellipse at 88% 8%, #eeeafd 0, transparent 32rem), var(--bg);
     color: var(--text);
     line-height: 1.6;
 }
@@ -38,7 +41,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background: var(--bg);
+    background: rgba(250, 249, 246, 0.94);
     border-bottom: 1px solid var(--border);
     z-index: 10;
 }
@@ -79,6 +82,11 @@ nav a.active {
     color: var(--text);
     font-size: 1.05rem;
     font-weight: 700;
+}
+
+.brand::after {
+    content: ".";
+    color: #D8785D;
 }
 
 /* Layout */
@@ -130,6 +138,10 @@ ul {
     margin-bottom: 1.5rem;
 }
 
+#home h1 {
+    color: #303D86;
+}
+
 .home-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +153,7 @@ ul {
     aspect-ratio: 4 / 5;
     object-fit: cover;
     border-radius: 16px;
+    box-shadow: 12px 12px 0 var(--lavender);
 }
 
 /* Buttons */
@@ -168,8 +181,8 @@ ul {
 }
 
 .btn-secondary {
-    color: var(--text);
-    border-color: var(--gray);
+    color: var(--accent);
+    border-color: #B8BEE1;
 }
 
 .btn-secondary:hover {
@@ -197,11 +210,19 @@ ul {
 .project {
     display: flex;
     flex-direction: column;       /* lets the cards stretch to equal height */
-    background: var(--surface);
+    background: var(--lavender);
     border: 1px solid var(--border);
     border-radius: 12px;
     overflow: hidden;
     transition: border-color 0.2s, transform 0.2s;
+}
+
+.project:nth-child(3n + 2) {
+    background: var(--mint);
+}
+
+.project:nth-child(3n) {
+    background: var(--peach);
 }
 
 .project:hover {
@@ -262,9 +283,20 @@ ul {
 
 #skills li {
     padding: 0.25rem 0.75rem;
-    background: var(--surface);
+    background: var(--lavender);
+    color: #3C477E;
     border-radius: 999px;
     font-size: 0.9rem;
+}
+
+#skills ul:nth-of-type(2) li {
+    background: var(--mint);
+    color: #315F53;
+}
+
+#skills ul:nth-of-type(3) li {
+    background: var(--peach);
+    color: #80503F;
 }
 
 /* Project detail page */
@@ -298,7 +330,7 @@ ul {
 
 .tags li {
     padding: 0.25rem 0.75rem;
-    background: var(--surface);
+    background: var(--lavender);
     border: 1px solid var(--border);
     border-radius: 999px;
     font-size: 0.85rem;
@@ -328,6 +360,10 @@ ul {
     max-width: 65ch;
     color: var(--muted);
     margin-bottom: 1rem;
+}
+
+#contact {
+    border-top: 1px solid var(--border);
 }
 
 .contact-links {
