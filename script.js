@@ -3,7 +3,7 @@ function createProjectCard(project) {
     card.className = "project";
 
     card.innerHTML = `
-        <img src="${project.image}" alt="Screenshot of ${project.title}">
+        ${project.image ? `<img src="${project.image}" alt="Screenshot of ${project.title}">` : ""}
         <div class="project-body">
             <h3>${project.title}</h3>
             <p>${project.summary}</p>
@@ -51,7 +51,7 @@ function renderProjectDetail(container) {
             <a class="btn btn-secondary" href="${project.github}" target="_blank" rel="noopener">GitHub</a>
         </div>
 
-        <img class="detail-image" src="${project.image}" alt="Screenshot of ${project.title}">
+        ${project.image ? `<img class="detail-image" src="${project.image}" alt="Screenshot of ${project.title}">` : ""}
 
         <h2>About this project</h2>
         <p class="detail-text">${project.details}</p>
