@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#e9e5f6"/>
+  <circle cx="150" cy="115" r="110" fill="#ded8f1"/>
+  <circle cx="825" cy="430" r="130" fill="#d5e9e2"/>
+  <rect x="195" y="52" width="570" height="436" rx="16" fill="#fff"/>
+  <rect x="195" y="52" width="570" height="38" rx="16" fill="#f7f6fa"/>
+  <path d="M195 76h570v14H195z" fill="#f7f6fa"/>
+  <circle cx="220" cy="71" r="5" fill="#e7a8a5"/><circle cx="238" cy="71" r="5" fill="#e4cb8d"/><circle cx="256" cy="71" r="5" fill="#a4ceb8"/>
+  <g font-family="Arial, sans-serif">
+    <text x="480" y="144" text-anchor="middle" fill="#6356a7" font-size="19" font-weight="bold">Blog-App</text>
+    <text x="480" y="180" text-anchor="middle" fill="#26243a" font-size="29" font-weight="bold">Login</text>
+    <text x="480" y="206" text-anchor="middle" fill="#777387" font-size="14">A space for stories and conversation.</text>
+    <text x="321" y="248" fill="#555267" font-size="13">Username</text>
+    <rect x="320" y="258" width="320" height="39" rx="6" fill="#fff" stroke="#dddbe4" stroke-width="2"/>
+    <text x="321" y="326" fill="#555267" font-size="13">Password</text>
+    <rect x="320" y="336" width="320" height="39" rx="6" fill="#fff" stroke="#dddbe4" stroke-width="2"/>
+    <rect x="320" y="394" width="320" height="42" rx="6" fill="#6356a7"/>
+    <text x="480" y="421" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">LOGIN</text>
+    <text x="480" y="464" text-anchor="middle" fill="#777387" font-size="13">Don't have an account?  Signup</text>
+  </g>
+</svg>
