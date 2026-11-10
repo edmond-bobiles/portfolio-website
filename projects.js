@@ -16,5 +16,14 @@ const projects = [
         image: "assets/calculator.png",
         stack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
         github: "https://github.com/edmond-bobiles/calculator"
+    },
+    {
+        id: "nextjs-dashboard",
+        title: "Next.js Dashboard",
+        summary: "A financial dashboard for reviewing revenue and managing customer invoices.",
+        details: "I built this dashboard while working through the Next.js App Router course. It displays revenue summaries, a revenue chart, and recent invoices. Users can sign in and search, paginate, create, and edit invoices backed by a PostgreSQL database. The customer page and invoice deletion are not fully implemented yet.",
+        image: "assets/app-router.png",
+        stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "NextAuth.js", "Zod"],
+        github: "https://github.com/edmond-bobiles/nextjs-dashboard"
     }
 ];
