@@ -3,12 +3,19 @@ import Link from "next/link";
 import { ProjectGrid } from "@/components/project-grid";
 import { getOwnerAssets, portfolio } from "@/data/portfolio";
 import { getFeaturedProjects } from "@/data/projects";
+import type { Metadata } from "next";
 
 const skillStyles = [
   "bg-lavender text-lavender-ink",
   "bg-mint text-mint-ink",
   "bg-peach text-peach-ink",
 ];
+
+export const metadata: Metadata = {
+  title: `${portfolio.name} | Portfolio`,
+  description:
+    "Computer Science student at the University of Santo Tomas specializing in Data Science, building full-stack web applications and data engineering solutions.",
+};
 
 export default function HomePage() {
   const { profile, resume } = getOwnerAssets();
