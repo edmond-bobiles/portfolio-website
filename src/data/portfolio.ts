@@ -5,20 +5,6 @@ export const portfolio = {
   name: "Edmond Bobiles",
   brand: "Edmond.Dev",
   bio: "Hi! I am a Computer Science student at the University of Santo Tomas specializing in Data Science. I like building full-stack web applications and data engineering solutions through academic and client-based projects. I am also a consistent Dean's Lister and DOST scholar, eager to contribute to a team while continuing to grow as a software and data engineer.",
-  skillGroups: [
-    {
-      title: "Programming Languages",
-      skills: ["HTML", "CSS", "Java", "JavaScript", "Python", "SQL"],
-    },
-    {
-      title: "Tools & Technologies",
-      skills: ["Docker", "Apache Airflow", "Apache Kafka", "PostgreSQL", "Linux"],
-    },
-    {
-      title: "Soft Skills",
-      skills: ["Teamwork", "Problem-solving", "Adaptability", "Communication"],
-    },
-  ],
   contact: {
     intro: "Interested in working together or just want to say hi? My inbox is open.",
     email: "edmondjohn.bobiles@gmail.com",

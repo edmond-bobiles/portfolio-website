@@ -3,12 +3,7 @@ import { ProjectGrid } from "@/components/project-grid";
 import { getOwnerAssets, portfolio } from "@/data/portfolio";
 import { getFeaturedProjects } from "@/data/projects";
 import type { Metadata } from "next";
-
-const skillStyles = [
-  "bg-surface text-ink",
-  "bg-surface text-ink",
-  "bg-surface text-ink",
-];
+import { SkillsSection } from "@/components/skills-section";
 
 export const metadata: Metadata = {
   title: `${portfolio.name} | Portfolio`,
@@ -62,24 +57,7 @@ export default function HomePage() {
         <ProjectGrid projects={getFeaturedProjects(6)} />
       </section>
 
-      <section id="skills" className="py-16">
-        <h2 className="mb-3 text-[2rem] leading-[1.2] font-bold">Skills</h2>
-        {portfolio.skillGroups.map((group, index) => (
-          <div key={group.title}>
-            <h3 className="mb-3 text-xl leading-[1.2] font-bold">{group.title}</h3>
-            <ul className="mb-6 flex flex-wrap gap-2">
-              {group.skills.map((skill) => (
-                <li
-                  key={skill}
-                  className={`rounded-full px-3 py-1 text-[0.9rem] ${skillStyles[index % skillStyles.length]}`}
-                >
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </section>
+      <SkillsSection />
 
       <section id="contact" className="border-t border-line py-16">
         <h2 className="mb-3 text-[2rem] leading-[1.2] font-bold">Contact</h2>
