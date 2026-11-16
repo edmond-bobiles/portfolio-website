@@ -31,7 +31,6 @@ export const portfolio = {
 export function getOwnerAssets() {
   const assetsDir = path.join(process.cwd(), "public", "assets");
   return {
-    profile: existsSync(path.join(assetsDir, "profile.jpg")) ? "/assets/profile.jpg" : null,
     resume: existsSync(path.join(assetsDir, "resume.pdf")) ? "/assets/resume.pdf" : null,
   };
 }

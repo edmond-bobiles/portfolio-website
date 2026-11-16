@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ProjectGrid } from "@/components/project-grid";
 import { getOwnerAssets, portfolio } from "@/data/portfolio";
@@ -18,14 +17,14 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const { profile, resume } = getOwnerAssets();
+  const { resume } = getOwnerAssets();
   const { contact } = portfolio;
 
   return (
     <>
       <section
         id="home"
-        className="grid min-h-[70vh] grid-cols-[1.3fr_1fr] items-center gap-12 py-16 max-[800px]:min-h-0 max-[800px]:grid-cols-1"
+        className="flex min-h-[70vh] items-center py-16 max-[800px]:min-h-0"
       >
         <div>
           <h1 className="mb-3 text-[3.5rem] leading-[1.2] font-bold text-heading">
@@ -51,22 +50,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {profile ? (
-          <Image
-            src={profile}
-            alt={`Photo of ${portfolio.name}`}
-            width={640}
-            height={800}
-            priority
-            sizes="(max-width: 800px) 320px, 40vw"
-            className="aspect-[4/5] w-full rounded-2xl object-cover shadow-[12px_12px_0_var(--color-lavender)] max-[800px]:order-first max-[800px]:max-w-[320px]"
-          />
-        ) : (
-          <div
-            aria-hidden="true"
-            className="aspect-[4/5] w-full rounded-2xl border border-line bg-surface shadow-[12px_12px_0_var(--color-lavender)] max-[800px]:order-first max-[800px]:max-w-[320px]"
-          />
-        )}
       </section>
 
       <section id="projects" className="py-16">

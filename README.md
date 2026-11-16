@@ -1,6 +1,6 @@
 # Edmond Bobiles | Portfolio
 
-My personal portfolio website. I'm a Computer Science student at the University of Santo Tomas specializing in Data Science, and this site collects my projects, skills, and contact details in one place.
+My personal portfolio website. I'm a Computer Science student at the University of Santo Tomas and this site features my projects, skills, and contact details in one place.
 
 ## What's inside
 
@@ -15,7 +15,7 @@ My personal portfolio website. I'm a Computer Science student at the University 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-The site started as plain HTML, CSS, and JavaScript. I rebuilt it in Next.js to practice component-based design, typed data, and static page generation, keeping the same look and content.
+The site started as plain HTML, CSS, and JavaScript. I then rebuilt it in Next.js to practice component-based design, typed data, and static page generation, keeping the same look and content.
 
 ## Run it locally
 
@@ -38,6 +38,6 @@ src/
 ├── components/     Header, navigation, footer, project cards
 ├── data/           Project list and portfolio content
 └── types/          TypeScript types
-public/assets/      Images, profile photo, and resume
+public/assets/      Project images and resume
 ```
 
