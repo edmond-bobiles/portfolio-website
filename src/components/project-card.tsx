@@ -4,7 +4,7 @@ import type { Project } from "@/types/project";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-xl border border-line bg-surface transition duration-200 hover:-translate-y-0.5 hover:border-accent">
+    <article className="flex flex-col overflow-hidden rounded-xl border border-line bg-surface transition duration-200 hover:-translate-y-0.5 hover:border-ink">
       {project.image && (
         <Image
           src={project.image}
@@ -21,7 +21,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <div className="mt-auto flex items-center gap-4 pt-2">
           <Link
             href={`/projects/${project.id}`}
-            className="rounded-full border border-outline px-[0.9rem] py-[0.35rem] text-[0.85rem] font-semibold text-accent transition-colors hover:bg-page"
+            className="rounded-full border border-ink px-[0.9rem] py-[0.35rem] text-[0.85rem] font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
           >
             View project
           </Link>
@@ -30,7 +30,7 @@ export function ProjectCard({ project }: { project: Project }) {
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[0.85rem] font-semibold text-accent hover:underline"
+              className="text-[0.85rem] font-semibold text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink"
             >
               Live site
             </a>

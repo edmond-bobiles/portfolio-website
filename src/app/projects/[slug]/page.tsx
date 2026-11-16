@@ -31,7 +31,7 @@ export default async function ProjectPage({ params }: PageProps) {
     <article className="max-w-[800px] py-16">
       <Link
         href="/projects"
-        className="mb-6 inline-block text-[0.9rem] font-medium text-accent hover:underline"
+        className="mb-6 inline-block text-[0.9rem] font-medium text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink"
       >
         ← All projects
       </Link>
@@ -43,7 +43,7 @@ export default async function ProjectPage({ params }: PageProps) {
         {project.stack.map((tech) => (
           <li
             key={tech}
-            className="rounded-full border border-line bg-lavender px-3 py-1 text-[0.85rem] text-muted"
+            className="rounded-full border border-line bg-surface px-3 py-1 text-[0.85rem] text-muted"
           >
             {tech}
           </li>
@@ -56,7 +56,7 @@ export default async function ProjectPage({ params }: PageProps) {
             href={project.demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-transparent bg-accent px-[1.4rem] py-[0.7rem] text-[0.95rem] font-semibold text-white transition-opacity hover:opacity-90"
+            className="rounded-full border border-transparent bg-ink px-[1.4rem] py-[0.7rem] text-[0.95rem] font-semibold text-white transition-opacity hover:opacity-90"
           >
             Live demo
           </a>
@@ -65,7 +65,7 @@ export default async function ProjectPage({ params }: PageProps) {
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full border border-outline px-[1.4rem] py-[0.7rem] text-[0.95rem] font-semibold text-accent transition-colors hover:bg-surface"
+          className="rounded-full border border-ink px-[1.4rem] py-[0.7rem] text-[0.95rem] font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
         >
           GitHub
         </a>

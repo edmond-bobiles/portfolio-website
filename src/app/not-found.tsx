@@ -7,7 +7,7 @@ export default function NotFound() {
       <p className="mb-6 max-w-[65ch] text-muted">
         We couldn&apos;t find the page or project you were looking for.
       </p>
-      <Link href="/projects" className="font-semibold text-accent hover:underline">
+      <Link href="/projects" className="font-semibold text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink">
         ← Back to all projects
       </Link>
     </section>

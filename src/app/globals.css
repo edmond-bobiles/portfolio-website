@@ -1,31 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-page: #FAF9F6;
-  --color-ink: #20263A;
-  --color-muted: #596278;
-  --color-accent: #4056C9;
-  --color-surface: #F2F3F8;
-  --color-line: #E3E3EA;
-
-  --color-lavender: #EDEBFA;
-  --color-mint: #E2F1EB;
-  --color-peach: #F9EAE2;
-
-  /* One-off colors from the original CSS */
-  --color-heading: #303D86;
-  --color-brand-dot: #D8785D;
-  --color-outline: #B8BEE1;
-  --color-glow: #EEEAFD;
-  --color-lavender-ink: #3C477E;
-  --color-mint-ink: #315F53;
-  --color-peach-ink: #80503F;
+  --color-page: #FFFFFF;
+  --color-surface: #F8F9FA;
+  --color-line: #E7E7E7;
+  --color-ink: #111214;
+  --color-muted: #5F636B;
 
   --container-page: 75rem;
 }
 
 @theme inline {
   --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 @layer base {
@@ -40,16 +27,19 @@
   }
 
   body {
-    background:
-      radial-gradient(ellipse at 88% 8%, var(--color-glow) 0, transparent 32rem),
-      var(--color-page);
+    background: var(--color-page);
     color: var(--color-ink);
     line-height: 1.6;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-accent);
+    outline: 2px solid var(--color-ink);
     outline-offset: 3px;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-page);
   }
 
   @media (prefers-reduced-motion: reduce) {

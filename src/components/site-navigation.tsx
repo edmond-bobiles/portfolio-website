@@ -69,7 +69,7 @@ export function SiteNavigation() {
                 href={link.href}
                 aria-current={isActive ? (isHome ? "location" : "page") : undefined}
                 className={`text-[0.95rem] font-medium transition-colors ${
-                  isActive ? "text-accent" : "text-muted hover:text-ink"
+                  isActive ? "text-ink underline decoration-1 underline-offset-8" : "text-muted hover:text-ink"
                 }`}
               >
                 {link.label}

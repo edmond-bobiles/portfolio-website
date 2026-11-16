@@ -14,7 +14,7 @@ export default function ProjectsPage() {
     <section className="py-16">
       <div className="flex items-baseline justify-between">
         <h1 className="mb-3 text-[2rem] leading-[1.2] font-bold">All Projects</h1>
-        <Link href="/" className="text-accent hover:underline">
+        <Link href="/" className="text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink">
           Back to home
         </Link>
       </div>

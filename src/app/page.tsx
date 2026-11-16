@@ -5,9 +5,9 @@ import { getFeaturedProjects } from "@/data/projects";
 import type { Metadata } from "next";
 
 const skillStyles = [
-  "bg-lavender text-lavender-ink",
-  "bg-mint text-mint-ink",
-  "bg-peach text-peach-ink",
+  "bg-surface text-ink",
+  "bg-surface text-ink",
+  "bg-surface text-ink",
 ];
 
 export const metadata: Metadata = {
@@ -27,14 +27,14 @@ export default function HomePage() {
         className="flex min-h-[70vh] items-center py-16 max-[800px]:min-h-0"
       >
         <div>
-          <h1 className="mb-3 text-[3.5rem] leading-[1.2] font-bold text-heading">
+          <h1 className="mb-3 text-[3.5rem] leading-[1.2] font-bold text-ink">
             {portfolio.name}
           </h1>
           <p className="mb-6 max-w-[65ch]">{portfolio.bio}</p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="#projects"
-              className="rounded-full border border-transparent bg-accent px-[1.4rem] py-[0.7rem] text-[0.95rem] font-semibold text-white transition-opacity hover:opacity-90"
+              className="rounded-full border border-transparent bg-ink px-[1.4rem] py-[0.7rem] text-[0.95rem] font-semibold text-white transition-opacity hover:opacity-90"
             >
               View Projects
             </Link>
@@ -42,7 +42,7 @@ export default function HomePage() {
               <a
                 href={resume}
                 download
-                className="rounded-full border border-outline px-[1.4rem] py-[0.7rem] text-[0.95rem] font-semibold text-accent transition-colors hover:bg-surface"
+                className="rounded-full border border-ink px-[1.4rem] py-[0.7rem] text-[0.95rem] font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
               >
                 Download Resume
               </a>
@@ -55,7 +55,7 @@ export default function HomePage() {
       <section id="projects" className="py-16">
         <div className="flex items-baseline justify-between">
           <h2 className="mb-3 text-[2rem] leading-[1.2] font-bold">Projects</h2>
-          <Link href="/projects" className="text-accent hover:underline">
+          <Link href="/projects" className="text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink">
             All projects
           </Link>
         </div>
@@ -88,7 +88,7 @@ export default function HomePage() {
           <li>
             <a
               href={`mailto:${contact.email}`}
-              className="font-semibold text-accent hover:underline"
+              className="font-semibold text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink"
             >
               {contact.email}
             </a>
@@ -98,7 +98,7 @@ export default function HomePage() {
               href={contact.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-accent hover:underline"
+              className="font-semibold text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink"
             >
               GitHub
             </a>
@@ -108,7 +108,7 @@ export default function HomePage() {
               href={contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-accent hover:underline"
+              className="font-semibold text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink"
             >
               LinkedIn
             </a>
