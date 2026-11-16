@@ -3,6 +3,7 @@ import path from "node:path";
 
 export const portfolio = {
   name: "Edmond Bobiles",
+  brand: "Edmond.Dev",
   bio: "Hi! I am a Computer Science student at the University of Santo Tomas specializing in Data Science. I like building full-stack web applications and data engineering solutions through academic and client-based projects. I am also a consistent Dean's Lister and DOST scholar, eager to contribute to a team while continuing to grow as a software and data engineer.",
   skillGroups: [
     {
