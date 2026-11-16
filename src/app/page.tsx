@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { SkillsSection } from "@/components/skills-section";
 import { ContactLinks } from "@/components/contact-links";
 import { Reveal } from "@/components/reveal";
+import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: `${portfolio.name} | Portfolio`,
@@ -60,11 +61,18 @@ export default function HomePage() {
       </section>
 
       <SkillsSection />
-            <section id="contact" className="border-t border-line py-16">
+      <section id="contact" className="py-16">
         <Reveal>
-          <h2 className="mb-3 text-[2rem] leading-[1.2] font-bold">Contact</h2>
-          <p className="mb-4 max-w-[65ch] text-muted">{contact.intro}</p>
-          <ContactLinks />
+          <div className="grid grid-cols-[1fr_1.1fr] gap-12 rounded-2xl border border-line bg-surface p-10 max-[800px]:grid-cols-1 max-[800px]:gap-10 max-[800px]:p-6">
+            <div className="flex flex-col">
+              <h2 className="mb-3 text-[2rem] leading-[1.2] font-bold">Contact</h2>
+              <p className="max-w-[40ch] text-muted">{contact.intro}</p>
+              <div className="mt-8 min-[801px]:mt-auto">
+                <ContactLinks />
+              </div>
+            </div>
+            <ContactForm />
+          </div>
         </Reveal>
       </section>
     </>

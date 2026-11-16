@@ -25,7 +25,7 @@ export function ContactLinks() {
           <a
             href={href}
             {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            className="flex items-center gap-2.5 rounded-xl border border-line px-4 py-3 text-[0.95rem] font-medium transition duration-200 hover:-translate-y-0.5 hover:border-ink hover:bg-ink hover:text-white"
+            className="flex items-center gap-2.5 rounded-xl border border-line bg-page px-4 py-3 text-[0.95rem] font-medium transition duration-200 hover:-translate-y-0.5 hover:border-ink hover:bg-ink hover:text-white"
           >
             <Icon aria-hidden="true" className="h-[1.1rem] w-[1.1rem] shrink-0" />
             {label}
