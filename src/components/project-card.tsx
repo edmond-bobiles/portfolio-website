@@ -4,7 +4,7 @@ import type { Project } from "@/types/project";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-xl border border-line bg-surface transition duration-200 hover:-translate-y-0.5 hover:border-ink">
+    <article className="group flex h-full flex-col overflow-hiddenrounded-xl border border-line bg-surface transition duration-200 hover:-translate-y-0.5 hover:border-ink">
       {project.image && (
         <Image
           src={project.image}
@@ -12,7 +12,7 @@ export function ProjectCard({ project }: { project: Project }) {
           width={0}
           height={0}
           sizes="(max-width: 640px) 100vw, 600px"
-          className="block h-auto w-full"
+          className="block h-auto w-full transition-transform duration-500 ease-out group-hover:scale-[1.03]"
         />
       )}
       <div className="flex flex-1 flex-col gap-2 px-5 pt-[1.1rem] pb-5">

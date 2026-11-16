@@ -5,6 +5,7 @@ import { getFeaturedProjects } from "@/data/projects";
 import type { Metadata } from "next";
 import { SkillsSection } from "@/components/skills-section";
 import { ContactLinks } from "@/components/contact-links";
+import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
   title: `${portfolio.name} | Portfolio`,
@@ -59,11 +60,12 @@ export default function HomePage() {
       </section>
 
       <SkillsSection />
-
-      <section id="contact" className="border-t border-line py-16">
-        <h2 className="mb-3 text-[2rem] leading-[1.2] font-bold">Contact</h2>
-        <p className="mb-4 max-w-[65ch] text-muted">{contact.intro}</p>
-        <ContactLinks />
+            <section id="contact" className="border-t border-line py-16">
+        <Reveal>
+          <h2 className="mb-3 text-[2rem] leading-[1.2] font-bold">Contact</h2>
+          <p className="mb-4 max-w-[65ch] text-muted">{contact.intro}</p>
+          <ContactLinks />
+        </Reveal>
       </section>
     </>
   );
