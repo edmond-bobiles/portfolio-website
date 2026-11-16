@@ -6,9 +6,12 @@ import {
   SiBootstrap,
   SiDocker,
   SiFastapi,
+  SiGit,
+  SiGithub,
   SiJavascript,
   SiLinux,
   SiNextdotjs,
+  SiNodedotjs,
   SiPostgresql,
   SiPython,
   SiReact,
@@ -38,9 +41,10 @@ export const skillCategories: SkillCategory[] = [
     title: "Backend",
     skills: [
       { name: "Python", icon: SiPython },
+      { name: "Java", icon: FaJava },
+      { name: "Node.js", icon: SiNodedotjs },
       { name: "FastAPI", icon: SiFastapi },
       { name: "SQLAlchemy", icon: SiSqlalchemy },
-      { name: "Java", icon: FaJava },
       { name: "SQL", icon: FaDatabase },
       { name: "PostgreSQL", icon: SiPostgresql },
     ],
@@ -48,6 +52,8 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Tools & DevOps",
     skills: [
+      { name: "Git", icon: SiGit },
+      { name: "Github", icon: SiGithub },
       { name: "Docker", icon: SiDocker },
       { name: "Apache Airflow", icon: SiApacheairflow },
       { name: "Apache Kafka", icon: SiApachekafka },
