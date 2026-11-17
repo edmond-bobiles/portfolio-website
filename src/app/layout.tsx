@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import "./globals.css";
+import { portfolio } from "@/data/portfolio";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(portfolio.siteUrl),
   title: "Edmond Bobiles | Portfolio",
 };
 
