@@ -20,15 +20,12 @@ export default function HomePage() {
 
   return (
     <>
-      <section
-        id="home"
-        className="flex min-h-[70vh] items-center py-16 max-[800px]:min-h-0"
-      >
+        <section id="home" className="pt-28 pb-20 max-[800px]:pt-16 max-[800px]:pb-12">
         <div>
-          <h1 className="mb-3 text-[3.5rem] leading-[1.2] font-bold text-ink">
+          <h1 className="mb-3 text-[4.5rem] leading-[1.2] font-bold text-ink">
             {portfolio.name}
           </h1>
-          <p className="mb-6 max-w-[65ch]">{portfolio.bio}</p>
+          <p className="mb-6 max-w-[68ch]">{portfolio.bio}</p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="#projects"
