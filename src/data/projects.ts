@@ -10,6 +10,7 @@ export const projects: Project[] = [
     image: "/assets/blog-app.png",
     stack: ["HTML", "Tailwind CSS", "JavaScript", "Python", "FastAPI", "SQLAlchemy"],
     github: "https://github.com/edmond-bobiles/blog-app",
+    demo: "blog-app-seven-peach-19.vercel.app",
   },
   {
     id: "calculator",
@@ -20,6 +21,7 @@ export const projects: Project[] = [
     image: "/assets/calculator.png",
     stack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://github.com/edmond-bobiles/calculator",
+    demo: "calculator-delta-gray-34.vercel.app",
   },
   {
     id: "nextjs-dashboard",
@@ -30,6 +32,18 @@ export const projects: Project[] = [
     image: "/assets/app-router.png",
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "NextAuth.js", "Zod"],
     github: "https://github.com/edmond-bobiles/nextjs-dashboard",
+    demo: "nextjs-dashboard-phi-lilac-98.vercel.app",
+  },
+  {
+    id: "etch-a-sketch",
+    title: "Etch-a-Sketch",
+    summary: "A browser-based sketch pad built for The Odin Project.",
+    details:
+      "I built this sketch pad as part of The Odin Project to practice JavaScript and DOM manipulation. Moving the pointer over the grid colors its squares blue. Users can create a fresh grid by choosing a size from 1 to 100, with input validation and an option to cancel. Building it helped me practice creating and updating interface elements in response to user actions.",
+    image: "/assets/etch-a-sketch.png",
+    stack: ["HTML", "Tailwind CSS", "JavaScript"],
+    github: "https://github.com/edmond-bobiles/etch-a-sketch",
+    demo: "etch-a-sketch-cyan-nine.vercel.app",
   },
 ];
 
